@@ -1,4 +1,4 @@
-var C = require('chanakya');
+const C = require('chanakya');
 
 C.response('showplans', 'postback', (to, validatorResult) => {
 

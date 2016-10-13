@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/chanakya-chants/chanakya-starter-kit#readme",
   "dependencies": {
-    "chanakya": "git+https://github.com/chanakya-chants/chanakya-core.git",
-    "chanakya-facebook": "^1.0.8",
+    "chanakya": "^2.8.0",
+    "chanakya-facebook": "^1.1.1",
     "lodash": "^4.16.4",
     "node-fetch": "^1.6.3"
   }

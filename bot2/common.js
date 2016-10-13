@@ -1,5 +1,4 @@
-var C = require('chanakya'),
-  Q = require('q');
+const C = require('chanakya');
 
 /**
  * Expectations
