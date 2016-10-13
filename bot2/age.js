@@ -49,14 +49,14 @@ C.validator('isValidAge', null, (message) => {
   return returnData;
 });
 
-C.response('askage', 'age', (to) => {
-  return { text: `${to.first_name}, How old are you?` }
-});
+C.response('askage', 'age', (to) => ({
+  text: `${to.first_name}, How old are you?`
+}));
 
-C.response('notInAgeLimit', 'greetings', (to) => {
-  return { text: `${to.first_name}, Sorry you are not in permissible age. We serve customer only above 18 years, or below 60 years.` }
-});
+C.response('notInAgeLimit', 'greetings', (to) => ({
+  text: `${to.first_name}, Sorry you are not in permissible age. We serve customer only above 18 years, or below 60 years.`
+}));
 
-C.response('ageNaN', 'age', (to, age) => {
-  return { text: `${to.first_name}, I don't think that "${age}" is your age. Age should be only numbers.` }
-});
+C.response('ageNaN', 'age', (to, age) => ({
+  text: `${to.first_name}, I don't think that "${age}" is your age. Age should be only numbers.`
+}));
