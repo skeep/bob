@@ -8,11 +8,9 @@ C.response('fail', 'greetings', (to) => {
   return { text: `I am sorry ${to.first_name}, I am unable to understand what you mean.` }
 });
 
-// core.response('success', 'greetings', function (to) {
-//   return {
-//     text: `Hello ${to.first_name}, Thank you for showing interest in BoB?`
-//   };
-// });
+C.response('doPostback', 'postback', (to) => {
+  return { text: `${to.first_name}, I was expecting you to click on a button above!` }
+});
 
 C.response('askage', 'age', (to) => {
   return { text: `${to.first_name}, How old are you?` }
@@ -26,7 +24,7 @@ C.response('ageNaN', 'age', (to, validatorResult) => {
   return { text: `${to.first_name}, I don't think that ${validatorResult} is your age. Age should be only numbers.` }
 });
 
-C.response('showplans', 'greetings', (to, validatorResult) => {
+C.response('showplans', 'postback', (to, validatorResult) => {
 
   let buttons = validatorResult.map((plan)=> {
     return {

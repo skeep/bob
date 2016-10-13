@@ -19,7 +19,6 @@ C.expectation('greetings', ['isGreetings'], (res) => {
 });
 
 C.expectation('age', ['isValidAge'], (res) => {
-  console.log(res.plans);
   switch (res.response) {
   case 'notInAgeLimit':
     return {
