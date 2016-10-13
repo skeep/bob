@@ -9,7 +9,7 @@ var C = require('chanakya'),
 var bot = C.bootstrap({
   mount: 'bot',
   expectation: 'greetings',
-  token: 'EAALfXGCDGs0BABTSEqfhAldWyiamK5iAYOiFMkquTxSedHoGocIsJH4jsTPnoSU8oPPWC1qUvYSX54JCl2bjZCyX2201d94uYTMCrQyL0q4sZBrElPgsn5ETJJ5fQU7BzkLWfTRUyunXKKd5K3ZCZAdpZAZB0FIrLSkLbTBY6IRwZDZD'
+  token: 'EAAZAYR9QffLgBADtG8KosCA3piFmizbFaQNl86mPXQRWYB3BQYcgyyTe82EZCMsrI7VYJMDqtID6D3HCYc6scZA6cZBbWtTkwQMVlh9ZBH0omZAWCZBmURrYVAumbr0wWWif6ocND9qIj72g4CwjtC0nyzp89RnTw6b4N7ZArFEItQZDZD'
 });
 
 Cfb.init(bot);
